@@ -1,0 +1,37 @@
+ALGORITHM distinct
+VAR
+    arr1, arr2: ARRAY_OF Integer[10];
+    myKeys : ARRAY_OF integer[20];
+    htab: HASH_TABLE<integer,integer>
+    sum, i, j, count: Integer :=0
+BEGIN
+    // reading  arr1 elements
+    FOR i FROM 0 TO arr1.length-1 STEP 1  DO
+        
+        Read(arr1[i])
+    END_FOR
+
+    // reading  arr2 elements
+    FOR j FROM 0 TO arr2.length-1 STEP 1  DO
+        Read(arr2[j])
+    END_FOR
+
+    //insert arr1 in htab
+    FOR i FROM 0 TO arr1.length-1 STEP 1  DO
+        htab.insert(arr1[i], 1)  //arr1[i] == key,  1 === value
+    END_FOR
+
+    //test then insert arr2
+    FOR j FROM 0 TO arr2.length-1 STEP 1  DO
+        IF ( htab.lookup(arr2[j]) = true ) THEN
+            count := htab.get(arr2[j])
+            htab.insert(arr2[j], count+1)
+    END_FOR
+
+    myKeys := htab.getKeys()
+    FOR i FROM 0 TO 20 STEP 1  DO
+        IF (htab.get(myKeys[i]) = 1 ) THEN
+        sum:= sum + myKeys[i]
+    END_FOR
+
+END

@@ -1,0 +1,6 @@
+PROCEDURE dot_product(var T1,T2 : ARRAY_OF integer[100];)
+VAR
+    i :=0;
+BEGIN
+    
+END

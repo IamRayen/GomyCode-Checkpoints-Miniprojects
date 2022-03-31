@@ -1,0 +1,21 @@
+body {background-color: #00E2F5;margin-top: 0px;}
+#Header{background-color:#003136;width: 85%;margin: auto;height: 110px;margin-bottom: 0px;}
+#Tabs{float: right;width: 70%;margin-right: 15px;}
+#T1{width: 100%;}
+#T1 tr th {height: 100px;font-family: Arial, Helvetica, sans-serif;font-size: 40px;}
+#T1 tr th a{color:#00C9DB;text-decoration: none;}
+#T1 tr th a:hover{color: #006C75;}
+#Img{padding-left:5%;float: left;}
+#Name h1 {float: left;margin-left:20px;margin-top: 20px;font-family: Brush Script MT;font-size: 50px;color: #00E2F5;text-shadow: 0 0 25px;}
+#Home{text-align: center;margin-top: 0px;}
+#Home h2{color: #0B95DE;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 60px;margin-bottom:0px;margin-top: 0px;padding-right: 25%;}
+#Home p{font-family: cursive;font-size: 25px;margin-top: 0px;}
+#Home video{margin-top: 0px;}
+#Resume{text-align: center;}
+#About{text-align: center;}
+#contact{text-align: center;}
+h2{color: #0B95DE;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 60px;}
+#Resume table{margin-left: 25%;background-color:#006C75 ;border: 2px solid #0DFA89;box-shadow: 0 0 25px;}
+#Resume Table tr th{padding:15px;}
+#Resume Table tr td{padding:10px}
+#Contact{text-align: center;}

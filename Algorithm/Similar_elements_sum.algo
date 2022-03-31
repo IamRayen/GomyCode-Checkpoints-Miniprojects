@@ -1,0 +1,27 @@
+ALGORITHM distinct_Sum;
+VAR
+    sum,i,j,num1,num2 : INTEGER;
+    A1,A2 : ARRAY_OF INTEGER[100];
+BEGIN
+    sum:=0;
+    write("enter the length of the first array");
+    read(num1);
+    write("enter the length of the second array");
+    read(num2);
+    write("enter the integers of the first arr");
+    FOR i FROM 0 TO num1-1 STEP step  DO
+        read(A1[i])
+    END_FOR
+    write("enter the integers of the second arr");
+    FOR i FROM 0 TO num2-1 STEP step  DO
+        read(A2[i])
+    END_FOR
+    FOR i FROM 0 TO num1-1 STEP step  DO
+        FOR j FROM 0 TO num2-1 STEP step  DO
+            IF (A1[i] = A2[j]) THEN
+                sum := sum+A[i];
+            END_IF
+        END_FOR
+    END_FOR
+    write(sum);
+END

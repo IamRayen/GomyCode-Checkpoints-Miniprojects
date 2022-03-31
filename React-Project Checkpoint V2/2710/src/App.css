@@ -1,0 +1,19 @@
+.sidebar {
+    display: flex;
+    align-items: stretch;
+    gap: 9.5px;
+    flex-wrap: wrap;
+}
+.App{
+    padding: 20px;
+}
+.commentsec{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap : 10px;
+    max-height: 1000px;
+}
+.cccc{
+    margin: 30px;
+}

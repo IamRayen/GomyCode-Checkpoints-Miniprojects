@@ -1,0 +1,31 @@
+ALGORITHM CheckPoint;
+VAR
+    L,Nw,Nvo : INTEGER;
+    str : STRING;
+BEGIN
+    read(str);
+    L:=0;
+    WHILE (str[L]<>".") DO
+        L:=L+1;
+    END_WHILE
+    L:=L+1;
+
+
+    Nw:=1;
+    FOR i FROM 0 TO L-1 STEP step  DO
+        IF (str[i] = " ") THEN
+            Nw:=Nw+1;
+        END_IF
+    END_FOR
+
+    Nvo:=0;
+    FOR i FROM 0 TO L-1 STEP step  DO
+        IF (str[i] in [a, e, i, o, u, A, E, I, O, U]) THEN
+            Nvo:=Nvo+1;
+        END_IF
+    END_FOR
+
+    write("Length = ",L," ; Number of Words = ",Nw," ; Number of vowels = ",Nvo);
+
+
+END
